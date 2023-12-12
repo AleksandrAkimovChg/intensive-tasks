@@ -27,14 +27,14 @@ public class Task18 {
         while (isNotSorted && start < end) {
             isNotSorted = false;
 
-            for(int i = start; i < end; i++) {
+            for (int i = start; i < end; i++) {
                 if (inputArray[i] > inputArray[i + 1]) {
                     isNotSorted = true;
                     changeItem(inputArray, i, i + 1);
                 }
             }
             end--;
-            for(int i = end; i > start; i--) {
+            for (int i = end; i > start; i--) {
                 if (inputArray[i - 1] > inputArray[i]) {
                     isNotSorted = true;
                     changeItem(inputArray, i, i - 1);
